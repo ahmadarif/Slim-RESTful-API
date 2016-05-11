@@ -2,7 +2,7 @@
 Implementasi RESTful API menggunakan Slim Framework
 
 # Folder
-- Slim (Slim fremework file)
+- Slim (Slim framework file)
 - include (Helper, database setting)
 
 # File
