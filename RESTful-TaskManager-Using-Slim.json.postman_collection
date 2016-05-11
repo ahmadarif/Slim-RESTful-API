@@ -1,0 +1,200 @@
+{
+	"id": "eae3ef02-080d-548f-2485-d7849cc2030a",
+	"name": "RESTful-TaskManager-Using-Slim",
+	"description": "",
+	"order": [
+		"91211e03-c78b-37ae-f485-a6417790c3fb",
+		"1c3202c6-2be8-ef2c-af28-5db80144177d",
+		"18056612-49f8-21da-cf94-3e7658797a28",
+		"d58f5fc2-a128-028e-2102-4f7d02b11612",
+		"57148472-b24e-5116-11a4-0b91300ec991",
+		"f63e1cb6-e7db-9f3d-00bd-0794de0a11a7",
+		"db8aada4-4d18-756d-55bc-9ac705094a54"
+	],
+	"folders": [],
+	"timestamp": 1462956175835,
+	"owner": "332882",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "18056612-49f8-21da-cf94-3e7658797a28",
+			"headers": "Authorization: 837c83ebacf4b67438f2e2f496c92c88\n",
+			"url": "http://localhost/task_manager/v1/tasks",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "task",
+					"value": "First task",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1462957084909,
+			"name": "Add Task",
+			"description": "URL : /v1/tasks\n\nMethod : POST\n\n- task",
+			"collectionId": "eae3ef02-080d-548f-2485-d7849cc2030a",
+			"responses": []
+		},
+		{
+			"id": "1c3202c6-2be8-ef2c-af28-5db80144177d",
+			"headers": "",
+			"url": "http://localhost/task_manager/v1/login",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "ahmad.arif019@gmail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "123",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1462956719853,
+			"name": "Login",
+			"description": "URL : /v1/login\n\nMethod : POST\n\n- email\n- password",
+			"collectionId": "eae3ef02-080d-548f-2485-d7849cc2030a",
+			"responses": []
+		},
+		{
+			"id": "57148472-b24e-5116-11a4-0b91300ec991",
+			"headers": "Authorization: 837c83ebacf4b67438f2e2f496c92c88\n",
+			"url": "http://localhost/task_manager/v1/tasks/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1462957780840,
+			"name": "Get Task By Id",
+			"description": "URL : /v1/tasks/:id",
+			"collectionId": "eae3ef02-080d-548f-2485-d7849cc2030a",
+			"responses": []
+		},
+		{
+			"id": "91211e03-c78b-37ae-f485-a6417790c3fb",
+			"headers": "",
+			"url": "http://localhost/task_manager/v1/register",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Admin",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "admin@mail.com",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "admin",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1462957768530,
+			"name": "Register",
+			"description": "URL : /v1/register\n\nMethod : POST\n\n- name\n- email\n- password",
+			"collectionId": "eae3ef02-080d-548f-2485-d7849cc2030a",
+			"responses": []
+		},
+		{
+			"id": "d58f5fc2-a128-028e-2102-4f7d02b11612",
+			"headers": "Authorization: 837c83ebacf4b67438f2e2f496c92c88\n",
+			"url": "http://localhost/task_manager/v1/tasks",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1462957319885,
+			"name": "Get All Task",
+			"description": "",
+			"collectionId": "eae3ef02-080d-548f-2485-d7849cc2030a",
+			"responses": []
+		},
+		{
+			"id": "db8aada4-4d18-756d-55bc-9ac705094a54",
+			"headers": "Authorization: 837c83ebacf4b67438f2e2f496c92c88\n",
+			"url": "http://localhost/task_manager/v1/tasks/1",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1462958209225,
+			"name": "Delete Task",
+			"description": "URL : /v1/tasks/:id\n\nMethod : DELETE",
+			"collectionId": "eae3ef02-080d-548f-2485-d7849cc2030a",
+			"responses": []
+		},
+		{
+			"id": "f63e1cb6-e7db-9f3d-00bd-0794de0a11a7",
+			"headers": "Authorization: 837c83ebacf4b67438f2e2f496c92c88\n",
+			"url": "http://localhost/task_manager/v1/tasks/2",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "task",
+					"value": "Update task",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "status",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1462958275319,
+			"name": "Update Task By Id",
+			"description": "URL : /v1/tasks/:id\n\nMethod : PUT\n\nParameter :\n- task\n- status",
+			"collectionId": "eae3ef02-080d-548f-2485-d7849cc2030a",
+			"responses": []
+		}
+	]
+}
